@@ -1,0 +1,79 @@
+{
+  "stop_times": [
+    {
+      "service_id": 1,
+      "departure_time": "7:45am",
+      "departure_timestamp": 1661931909,
+      "shape": "36C Finch West To Jane"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "7:47am",
+      "departure_timestamp": 1661932029,
+      "shape": "36A Finch West To Kipling"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "7:47am",
+      "departure_timestamp": 1661932029,
+      "shape": "36B Finch West To Humberwood"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "7:53am",
+      "departure_timestamp": 1661932389,
+      "shape": "36D Finch West To Weston Road And Milvan"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "7:55am",
+      "departure_timestamp": 1661932509,
+      "shape": "36A Finch West To Kipling"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "7:55am",
+      "departure_timestamp": 1661932509,
+      "shape": "36B Finch West To Humberwood"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "8:01am",
+      "departure_timestamp": 1661932869,
+      "shape": "36C Finch West To Jane"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "8:03am",
+      "departure_timestamp": 1661932989,
+      "shape": "36A Finch West To Kipling"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "8:03am",
+      "departure_timestamp": 1661932989,
+      "shape": "36B Finch West To Humberwood"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "8:09am",
+      "departure_timestamp": 1661933349,
+      "shape": "36D Finch West To Weston Road And Milvan"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "8:17am",
+      "departure_timestamp": 1661933829,
+      "shape": "36C Finch West To Jane"
+    },
+    {
+      "service_id": 1,
+      "departure_time": "2:32pm",
+      "departure_timestamp": 1661956329,
+      "shape": "36D Finch West To Weston Road And Milvan"
+    }
+  ],
+  "users": [
+   
+  ]
+}

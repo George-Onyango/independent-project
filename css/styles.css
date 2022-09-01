@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto&family=Slabo+27px&display=swap');
+
+.card1 {
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    background-size: cover;
+}
+
+.card1-content {
+    padding: 1.5em;
+    background: linear-gradient(
+        hsl(0, 0%, 0% / 0),
+        hsl(20 0% 0% / 0.3) 20%,
+        hsl(0, 0%, 0% / 1),
+    );
+}
+.consumer {
+    text-align: center;
+    letter-spacing: 7px;  
+     font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Slabo 27px', serif;
+
+}
+.card1-title::after {
+    content: "";
+    position: absolute;
+    /* left: 0; */
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgba(27, 255, 103, 0.548);
+}
+.card1-title {
+    position: relative;
+    width: max-content;
+    outline: 1px solid peru;
+}
+
+.card {
+    position: relative;
+}
+
