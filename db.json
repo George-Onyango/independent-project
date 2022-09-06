@@ -74,6 +74,15 @@
     }
   ],
   "users": [
-   
+    {
+      "userName": "George Onyango",
+      "userRemark": "It's an amazing service",
+      "id": 1
+    },
+    {
+      "userName": "Steve ",
+      "userRemark": "Do better\n",
+      "id": 2
+    }
   ]
 }

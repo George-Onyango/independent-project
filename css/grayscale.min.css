@@ -502,6 +502,9 @@ input {
   background-color: #42dca3;
   color: #000;
 }
+#route-list-content {
+  padding-left: 530px;
+}
 
 
 

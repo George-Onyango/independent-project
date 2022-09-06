@@ -1,3 +1,9 @@
+let btnSelect = `
+<button class ="dep-btn">
+        Select
+        </button>
+`;
+
 document.addEventListener("DOMContentLoaded", () => {
   // Show routes that can be taken
 
@@ -11,9 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2>${route.shape}</h2>
         <p id = "route-time">${route.departure_time}<p>
         <div id = "btn-wrapper">
-         <button id = "dep-time-btn">
-        Select
-        </button>
+         ${btnSelect}
         </div>
        
         </div>
@@ -27,21 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((stop_times) => stop_times.forEach((route) => renderRoutes(route)));
   }
 
+  
+
   pickUp.addEventListener("click", () => {
     getRouteData();
   });
 
-  // Show the bus taken
-  document.querySelector("#dep-time-btn").addEventListener("click", () => {
-    // console.log(`You have picked${bus.shape} that leaves at ${bus.departure_time}`)
-    fetch("http://localhost:3000/stop_times")
-      .then((res) => res.json())
-      .then((dep) =>
-        alert(
-          `You have picked${dep.shape} that leaves at ${dep.departure_time}`
-        )
-      );
-  });
+
 
   // Data entry
 
@@ -77,6 +73,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// document.querySelectorAll("buttons").addEventListener("click", (all_btn) => {
+//   all_btn.preventDefault();
+//   // let pickUp = document.querySelector(".pick-btn");
+//   // let selectBtn = document.querySelector(".dep-btn");
+
+//   if (card.className === 'pick-btn') {
+//     getRouteData();
+//   } else if (card.className === 'dep-btn') {
+//     busSelected();
+//   } else {
+//     null;
+//   }
+// });
+
+// Button select
+
+// selectBtn.addEventListener("click", () => {
+//   busSelected();
+// });
+
 // Data post
 function postUserData(userInfo) {
   // New users
@@ -92,4 +108,12 @@ function postUserData(userInfo) {
   })
     .then((resp) => resp.json())
     .then((data) => alert(`${data.userName},Thank you for your feedback`));
+}
+
+function busSelected() {
+  fetch("http://localhost:3000/users")
+    .then((res) => res.json())
+    .then((booked) => {
+      alert(`You have selected ${booked.shape} for ${booked.departure_time}`);
+    });
 }
